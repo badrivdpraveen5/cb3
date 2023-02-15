@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div>
+            <div class=" row  justify-content-center align-items-center ">
+                <div class=" col-md-9 col-lg-6 col-xl-5">
+                    <img src="../../../assets/loginlogo.jpg" width="90%">
+                </div>
+                <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+                    <form  [formGroup]="formdata" (ngSubmit)="click(formdata.value)">
+                        <div>
+                            <h2>Sign in</h2>
+                        </div>
+                        <br />
+                        <!--user type-->
+                        <div>
+                            <label>User Type</label>
+                            <select name="user" class="form-select form-select-lg " formControlName="usertype">
+                                <option value="admin">Admin</option>
+                                <option value="faculty">Faculty</option>
+                                <option value="student">Student</option>
+                            </select>
+                        </div>
+                        <br />
+                        <!-- username input -->
+                        <div>
+                            <label>User Name</label>
+                            <input type="text" class=" form-control form-control-lg" placeholder="Enter User Name" value=""  formControlName="username" name="uname"/>
+                        </div>
+                        <br /> 
+                        <!-- Password input -->
+                        <div>
+                            <label>Password</label>
+                            <input type="password" class="form-control form-control-lg" placeholder="Enter password"  formControlName="password" value="" name="upwd"/>
+                        </div>
+                        <div class="text-center text-lg-start mt-4 pt-2">
+                            <button type="submit" class="btn btn-primary btn-lg"
+                                style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
+                        </div>
+                        <br />
+                        <div>
+                            <a href="#!">Forgot password?</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </section>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+</head>
+<body>
+<div>
+  <app-loginnav></app-loginnav>
+</div>
+
+<div class="sidebar">
+  <a class="active" href="admin/home" ><i class="fas fa-home" ></i>  Home</a>
+  <a  href="admin/student-registration" >Student Registration</a>
+  <a href="admin/faculty-registration">Faculty Registration</a>
+  <a href="admin/exam">Create Exam</a>
+  <a href="admin/student-details">Student Details</a>
+  <a href="admin/faculty-details">Faculty Details</a>
+  <a href="admin/marks-update">Student Marks Update</a>
+  <a href="admin/marks-view">Student Marks View</a>
+  <a href="admin/view-profile">View Profile</a>
+  <a href="admin/change-password">Change Password</a>
+</div>
+
+<div class="content">
+  <router-outlet></router-outlet>
+</div>
+</body>
+</html>
