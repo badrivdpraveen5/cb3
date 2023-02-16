@@ -7,7 +7,7 @@ import { FormControl,FormGroup } from '@angular/forms';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent{
-  formdata;
+  formdata:any;
   constructor(private rt:Router) { }
   ngOnInit() {
     this.formdata=new FormGroup({
@@ -16,7 +16,7 @@ export class LoginComponent{
       password:new FormControl("")
     })
   }
-  click(data){
+  click(data:any){
     if(data.usertype=="admin" ){
       if(data.username=="praveen" && data.password=="admin"){
         alert("admin login successful");
